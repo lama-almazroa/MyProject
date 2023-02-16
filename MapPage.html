@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang = "ar" dir="rtl">
+        <head>
+        
+          <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+         
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          
+        <title>دليل طالبات</title>
+        <link rel="stylesheet" href="stylee.css" />
+      
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+</head>
+<body>
+          
+        <!-----هنا الخريطة---->
+
+        <section calss="header">
+            
+            <nav>
+        
+                <a href="Interface.html"><img src="pic1/logo1.png"></a> 
+                <div class ="nav-links" id="navLinks">
+          
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                      <ul>
+                          
+                           <li><a href="Interface.html" >الرجوع للرئيسية</a></li>
+                     </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()" ></i>
+                     </nav>
+
+        </section> 
+        <section class="allMap">
+          <div class="row"> 
+        
+            <div class="map">
+                <h3>الدور الاول</h3>
+           
+                <img src="pic1/map.jpeg">
+              
+
+                </div>
+                <div class="map">
+                    <h3>الدور الثاني</h3>
+                    <p> قسم تقنيه المعلومات</p>
+                <img src="pic1/map1.jpeg">
+               
+            </div>
+                <div class="map">
+                    <h3>الدور الثاني</h3>
+                    <p>قسم نظم المعلومات </p>
+                <img src="pic1/map2.jpeg">
+               
+            </div>
+                <div class="map">
+                    <h3>الدور الثالث</h3>
+                <p> قسم علوم الحاسب</p>
+                <img src="pic1/map3.jpeg">
+             
+            </div>
+                <div class="map">
+                    <h3>الدور الثالث</h3>
+                <p> قسم علوم الحاسب</p>
+                <img src="pic1/map4.jpeg">
+                
+            </div>
+                <div class="map">
+                    <h3>الدور الرابع</h3>
+                    <p>قسم الادارة</p>
+                <img src="pic1/map5.jpeg">
+              
+            </div>
+                <div class="map">
+                    <h3>الدور الرابع</h3>
+                    <p>قسم نظم المعلومات </p>
+                <img src="pic1/map6.jpeg">
+            
+            </div>
+                
+        </div>
+                    
+        </div>
+   </section>
+    <!---هنا جافا سكربت للقائمه بالايفون-->
+   <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.left="0";
+      
+    }
+    function hideMenu(){
+       navLinks.style.left= "-200px"; 
+    }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang = "ar" dir="rtl">
+        <head>
+        
+ 
+          <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>دليل طالبات</title>
+          <link rel="stylesheet" href="stylee.css" />
+        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+</head>
+<body>
+              
+        <!-----هنا المساعده---->
+        <section calss="header">
+            
+            <nav>
+        
+                <a class = "logo" href="Interface.html"><img src="pic1/logo1.png"></a> 
+                <div class ="nav-links" id="navLinks">
+          
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                      <ul>
+                          
+                           <li><a href="Interface.html" >الرجوع للرئيسية</a></li>
+                     </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()" ></i>
+                     </nav>
+
+          
+            </section>
+            <section>    
+              <div class="help-form">
+                
+                <div class="req">
+                  <h2> طلب</h2>   
+                </div>
+                      <div class="pro-title">
+                   
+                          <p>موضوع المشكله</p>
+                          <input type="text" placeholder="ادخلي هنا.. " />
+                        </div> 
+                    <div class="mass-text">
+                      <br>
+                      <p>نص الرساله</p>
+                      <input type="text1" placeholder="ادخلي هنا.. " />
+                    </div>  
+                  <div class="mass">
+                    
+                      <a href="massageHelp.html"  type="button"class="massage">ارسال </a>
+                    </div>
+              
+              </div>
+            
+            </section>
+            
+     
+            <!---هنا جافا سكربت للقائمه بالايفون-->
+   <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.left="0";
+      
+    }
+    function hideMenu(){
+       navLinks.style.left= "-200px"; 
+    }
+
+   </script>
+</body>
+</html>

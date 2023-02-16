@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta name="viewport" content="with=device-width, initial-scale=1.0" />
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>دليل طالبات</title>
+  <link rel="stylesheet" href="stylee.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    </head>
+<body>
+          <!-----هنا الصفحة اللي تظهر للموطفة---->
+         
+            <section calss="header">
+            
+                <nav>
+            
+                    <a href="Interface.html"><img src="pic1/logo1.png"></a> 
+                    <div class ="nav-links" id="navLinks">
+              
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                          <ul>
+                              
+                               <li><a href="Interface.html" >الخروج </a></li>
+                         </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()" ></i>
+                         </nav>
+    
+            </section>
+                   <!-- صفحة الموظفة -->
+
+            <section class="emplyee-form">
+                
+           
+                  
+             <div class="row1">
+                  <div class="op">
+                    <img src="pic1/88350.jpg" >
+           
+                        <a href="" type="button"  class="massage">الاضافة </a>
+                 
+                  </div>
+          
+                  <div class="op">
+                  <img src="pic1/31219.jpg">
+              
+                      <a href = "" type="button" class= "massage" > التعديل والحذف</a> 
+                 
+                       </div>
+                    
+               
+                </div>
+         
+            
+            
+            </section>
+            <script>
+                var navLinks = document.getElementById("navLinks")
+                function showMenu(){
+                    navLinks.style.left="0";
+                  
+                }
+                function hideMenu(){
+                   navLinks.style.left= "-200px"; 
+                }
+            
+               </script>
+            
+</body>
+</html>

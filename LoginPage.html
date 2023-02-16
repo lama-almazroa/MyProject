@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>دليل طالبات</title>
+        <link rel="stylesheet" href="stylee.css" />
+      
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <section calss="header">
+      <nav>
+        
+        <a href="Interface.html"><img src="pic1/logo1.png"></a> 
+        <div class ="nav-links" id="navLinks">
+  
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  
+                   <li><a href="Interface.html" >الرجوع للرئيسية</a></li>
+             </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+             </nav>
+
+          </section>
+
+        
+            <div class="login-form">
+                <form>
+                
+                    <p>تسجيل الدخول</p>
+                    
+                    <label>الرمز السري:</label>
+                    <input type="password" id="password"placeholder="ادخل الرقم السري هنا.. " required/>
+                    <span class="eye" onclick="myFun()">
+                      <i id="hide1" class="fa fa-eye"></i>
+                      <i id="hide2" class="fa fa-eye-slash" ></i>
+                    </span>
+                
+                  
+                   
+                      <a href="#" type="submit" class="massage" onclick="auth()">دخول</a>
+             
+                 
+                    
+                  
+                </form>
+            
+      
+            </div>
+          
+          </section>
+
+       <!---هنا جافا سكربت للقائمه بالايفون-->
+   <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.left="0";
+      
+    }
+    function hideMenu(){
+       navLinks.style.left= "-200px"; 
+    }
+
+   </script>
+
+   <script>
+    function myFun(){
+       var x = document.getElementById("password")
+       var y = document.getElementById("hide1")
+       var z = document.getElementById("hide2")
+
+       if(x.type === 'password'){
+        x.type="text";
+        y.style.display= "block";
+        z.style.display= "none";
+       }
+       else{
+        x.type="password";
+        y.style.display= "none";
+        z.style.display= "block";
+       }
+    }
+   </script>
+   <script>
+    function auth(){
+      var password = document.getElementById("password").value;
+      if(password == "Fhdah"){
+     window.location.href =("emplyeePage.html");
+        alert("تم تسجيل دخولك بنجاح");
+      }
+      else
+        { 
+        alert("الرجاء ادخال كلمة السر او الرقم الذي ادخلته غير صحيح");
+        return;
+        }
+      
+    }
+    
+    </script>
+</body>
+</html>
